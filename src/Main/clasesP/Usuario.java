@@ -1,6 +1,5 @@
 /*Axel Roman*/
 package clasesP;
-import java.util.Scanner;
 
 public class Usuario {
   private String nombre;
@@ -63,7 +62,7 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
-    public char getRol() {
+    public String getRol() {
         return rol;
     }
 
