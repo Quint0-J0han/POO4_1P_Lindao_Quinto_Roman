@@ -1,5 +1,5 @@
 package clasesP;
-*/
+/* 
 public class Editor extends Usuario {
     private List<Articulo> articulosAsignados;
 

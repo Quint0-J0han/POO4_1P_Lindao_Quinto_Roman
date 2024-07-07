@@ -17,8 +17,8 @@ public class Articulo {
      * Usuario persona = new Usuario(); llama a la clase usuario
      * Autor escritor = new Autor();
      * 
-     * nombre = persona.getNombre(); Se toma el nombre del escritor
-     * codigoID = escritor.getCodigoID(); Se toma su codigo de ID
+     * nombre = persona.getNombre(); Se toma el nombre de la clase Usuario
+     * codigoID = escritor.getCodigoID(); Se toma su codigo de ID de la clase Autor
      * 
      */
     Articulo(String nombre,int codigoID,int codigoUnico){
