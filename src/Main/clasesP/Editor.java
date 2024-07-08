@@ -1,12 +1,22 @@
 package clasesP;
-*/
+
+
 public class Editor extends Usuario {
-    private List<Articulo> articulosAsignados;
-
-    public Editor(String nombre, String correoElectronico, String contraseña, int numeroIdentificacion) {
-        super(nombre, correoElectronico, contraseña, numeroIdentificacion);
-        this.articulosAsignados = new ArrayList<>(); // Lista para almacenar los artículos asignados
-
+    private String journal;
+    
+    public Editor(String user, String Contrasenia, String contraseña,char rol,String nombre,String apellido,String journal) {
+        super(user, Contrasenia,rol, nombre, apellido);
+        this.journal =journal;
+        GenerarCorreo(); 
 }
-*/
-    // Métodos específicos para la clase Editor (asignarRevisor(), enviarComentario(), etc.)
+
+ @Override
+ public void GenerarCorreo(){
+    this.setCorreoElectronico(this.getUser()+"@gmail.com");
+ }
+ public String getJournal(){
+    return journal;
+ }
+ public void setJournal(String journal){
+    this.journal= journal;
+ }
