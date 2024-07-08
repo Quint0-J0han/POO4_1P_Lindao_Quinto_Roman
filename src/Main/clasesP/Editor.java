@@ -1,13 +1,5 @@
 package clasesP;
 
-
-public class Editor extends Usuario {
-    private String journal;
-    
-    public Editor(String user, String Contrasenia, String contraseña,char rol,String nombre,String apellido,String journal) {
-        super(user, Contrasenia,rol, nombre, apellido);
-        this.journal =journal;
-        GenerarCorreo(); 
 }
 
  @Override

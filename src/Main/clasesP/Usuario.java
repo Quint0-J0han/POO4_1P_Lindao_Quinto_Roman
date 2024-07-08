@@ -1,26 +1,19 @@
-/*Axel Roman*/
 package clasesP;
-
-public class Usuario {
+public abstract class Usuario {
   private String nombre;
-    private String apellido;
-    private String correoElectronico;
-    private String usuario;
-    private String contraseña;
-    private String rol;
+    String apellido;
+    String correoElectronico;
+    String user;
+    String Contrasenia;
+    char rol;
 
-    public Usuario(String nombre, String apellido, String correoElectronico, String usuario, String contraseña, String rol) {
+  public Usuario(String user , String Contrasenia,char rol,String nombre, String apellido) {
+        this.user=user;
+        this.Contrasenia=Contrasenia;
+        this.rol=rol;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.correoElectronico = correoElectronico;
-        this.usuario = usuario;
-        this.contraseña = contraseña;
-        this.rol = rol;
     }
-  public void iniciarSesion() {
-        System.out.println("Iniciando sesión como " + this.usuario);
-    }
-
     // Getters y Setters
     public String getNombre() {
         return nombre;
@@ -46,28 +39,35 @@ public class Usuario {
         this.correoElectronico = correoElectronico;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getUser() {
+        return user;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public String getContraseña() {
-        return contraseña;
+        return Contrasenia;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContraseña(String contrasenia) {
+        this.Contrasenia = contrasenia;
     }
 
-    public String getRol() {
+    public char getRol() {
         return rol;
     }
 
-    public void setRol(String rol) {
+    public void setRol(char rol) {
         this.rol = rol;
     }
+@Override
+    public String toString() {
+        return "Usuario [nombre=" + nombre + ", apellido=" + apellido + ", correoElectronico=" + correoElectronico
+                + "]";
+    }
+    public abstract void GenerarCorreo();
+
 }
-//hola
+
