@@ -66,6 +66,7 @@ public class Articulo {
         }
         return codigo.toString();
     }
+    
     @Override
     public String toString(){
         return "Articulo [titulo: "+titulo+", codigo: "+codigo+
