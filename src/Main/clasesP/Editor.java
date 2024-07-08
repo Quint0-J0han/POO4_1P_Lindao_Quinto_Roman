@@ -7,6 +7,8 @@ public class Editor extends Usuario {
         super(nombre, correoElectronico, contraseña, numeroIdentificacion);
         this.articulosAsignados = new ArrayList<>(); // Lista para almacenar los artículos asignados
     }
+
+    
 }
 */
     // Métodos específicos para la clase Editor (asignarRevisor(), enviarComentario(), etc.)
