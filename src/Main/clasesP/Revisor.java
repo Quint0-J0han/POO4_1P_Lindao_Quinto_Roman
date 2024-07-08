@@ -2,6 +2,7 @@ package clasesP;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
+
 public class Revisor extends Usuario {
     String especialidad;
     int numeroArticulos;
