@@ -1,6 +1,10 @@
 package clasesP;
-
-}
+private String journal;
+   public Editor(String user, String Contrasenia,char rol, String nombre, String apellido, String journal ){
+      super(user, Contrasenia,rol, nombre, apellido);
+      this.journal=journal;
+      GenerarCorreo();
+   }
 
  @Override
  public void GenerarCorreo(){
