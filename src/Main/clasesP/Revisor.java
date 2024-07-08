@@ -20,7 +20,7 @@ public class Revisor extends Usuario {
     }
 
     public void SubirRevision(Articulo arti, String comentarios){
-        try(BufferedWriter write = new BufferedWriter(
+        try(BufferedWriter writer = new BufferedWriter(
             new FileWriter("src/Main/archivos/Revision.txt",true))){
                 String contenido = this.getNombre()+","+arti.getCodigo()+", comentarios: "
                 +comentarios;

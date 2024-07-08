@@ -60,7 +60,7 @@ public class Articulo {
         String Caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         SecureRandom Random = new SecureRandom();
         StringBuilder codigo = new StringBuilder(6);
-        for(int i;i<6;i++){
+        for(int i=0;i<6;i++){
             int indiceAleatorio = Random.nextInt(Caracteres.length());
             codigo.append(Caracteres.charAt(indiceAleatorio));
         }
