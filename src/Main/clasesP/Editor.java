@@ -1,8 +1,8 @@
 package clasesP;
 
 
- @Override
- public void GenerarCorreo(){
+   @Override
+   public void GenerarCorreo(){
     this.setCorreoElectronico(this.getUser()+"@gmail.com");
  }
  public String getJournal(){
