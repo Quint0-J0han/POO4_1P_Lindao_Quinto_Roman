@@ -4,7 +4,7 @@ public class Editor extends Usuario{
    private String journal;
 
    public Editor(String user,String Contrasenia,char rol,String apellido,String journal){
-      super(user,Contrasenia,rol,nombre,apellido);
+      super(user,Contrasenia,rol, nombre,apellido);
       this.journal=journal;
       GenerarCorreo();
    }

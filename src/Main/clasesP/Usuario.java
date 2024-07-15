@@ -1,6 +1,9 @@
 package clasesP;
+
+import java.util.ArrayList;
+
 public abstract class Usuario {
-  private String nombre;
+    String nombre;
     String apellido;
     String correoElectronico;
     String user;
@@ -47,11 +50,11 @@ public abstract class Usuario {
         this.user = user;
     }
 
-    public String getContraseña() {
+    public String getContrasenia() {
         return Contrasenia;
     }
 
-    public void setContraseña(String contrasenia) {
+    public void setContrasenia(String contrasenia) {
         this.Contrasenia = contrasenia;
     }
 
